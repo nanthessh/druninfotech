@@ -3,10 +3,14 @@ import { Globe, Smartphone, Brain, Palette, Users, TrendingUp, Star, Shield } fr
 export const NAV_LINKS = ['Services', 'Work', 'About', 'Careers', 'Contact'];
 
 export const SERVICES = [
-  { icon: Globe, title: 'Web Application Development', desc: 'Scalable, high-performance web apps built with modern frameworks. From SaaS platforms to enterprise portals.', tags: ['React', 'Node.js', 'AWS'] },
-  { icon: Smartphone, title: 'Mobile Apps', desc: 'Native and cross-platform mobile experiences that users love. iOS & Android with seamless performance.', tags: ['React Native', 'Flutter', 'Swift'] },
-  { icon: Brain, title: 'AI Solutions', desc: 'Intelligent automation, ML models, and AI integrations that give your business a competitive edge.', tags: ['Python', 'TensorFlow', 'OpenAI'] },
-  { icon: Palette, title: 'UI/UX Design', desc: 'Design systems and interfaces that convert. Every pixel crafted for clarity, trust, and delight.', tags: ['Figma', 'Prototyping', 'Research'] },
+  { icon: Globe, title: 'Web Application Development', desc: 'Scalable, high-performance web apps built with modern frameworks. From SaaS platforms to enterprise portals.', tags: ['React', 'Node.js', 'AWS'], image: 'https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&q=80',
+    details: 'We build fast, scalable web applications using React, Next.js, Node.js, and cloud infrastructure. From SaaS dashboards to enterprise portals, we deliver pixel-perfect, production-ready products. Our process includes architecture planning, UI/UX design, development, testing, and deployment on AWS or Vercel.' },
+  { icon: Smartphone, title: 'Mobile Apps', desc: 'Native and cross-platform mobile experiences that users love. iOS & Android with seamless performance.', tags: ['React Native', 'Flutter', 'Swift'], image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80',
+    details: 'We craft high-performance iOS and Android apps using React Native and Flutter. From MVP to full-scale apps, we handle UI design, API integration, push notifications, payments, and App Store deployment. Our apps are built for speed, reliability, and great user experience.' },
+  { icon: Brain, title: 'AI Solutions', desc: 'Intelligent automation, ML models, and AI integrations that give your business a competitive edge.', tags: ['Python', 'TensorFlow', 'OpenAI'], image: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=600&q=80',
+    details: 'We build custom AI solutions including NLP pipelines, recommendation engines, computer vision, and OpenAI integrations. Our AI products automate repetitive tasks, extract insights from data, and help businesses make smarter decisions faster.' },
+  { icon: Palette, title: 'UI/UX Design', desc: 'Design systems and interfaces that convert. Every pixel crafted for clarity, trust, and delight.', tags: ['Figma', 'Prototyping', 'Research'], image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&q=80',
+    details: 'We create beautiful, user-centered designs that convert visitors into customers. Our design process includes user research, wireframing, high-fidelity Figma prototypes, and complete design systems with 100+ reusable components. Every design is tested for usability and accessibility.' },
 ];
 
 export const STATS = [

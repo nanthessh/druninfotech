@@ -2,7 +2,6 @@ import React from 'react';
 import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ClientLogos from './components/ClientLogos';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import Work from './components/Work';
@@ -21,7 +20,6 @@ export default function App() {
       <Loader />
       <Navbar />
       <Hero />
-      <ClientLogos />
       <Stats />
       <Services />
       <Work />
