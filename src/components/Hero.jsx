@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Phone, CheckCircle, Play } from 'lucide-react';
+import { ArrowRight, Phone, CheckCircle } from 'lucide-react';
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
