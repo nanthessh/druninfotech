@@ -61,7 +61,7 @@ export default function Hero() {
           </motion.div>
 
           <motion.div {...fadeUp(0.4)} className="flex flex-wrap gap-4 text-sm text-gray-500">
-            {['ISO Certified', 'NDA Protected', '24/7 Support', 'Agile Delivery'].map(b => (
+            {[ 'NDA Protected', '24/7 Support', 'Agile Delivery'].map(b => (
               <div key={b} className="flex items-center gap-2">
                 <CheckCircle size={14} className="text-brand" /> {b}
               </div>
