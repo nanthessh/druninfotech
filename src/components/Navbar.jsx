@@ -106,7 +106,13 @@ export default function Navbar() {
                   initial={{ opacity: 0, x: -16 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.06 }}
-                  onClick={() => setOpen(false)}
+                  onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      const el = document.getElementById(l.toLowerCase());
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                  }}
                   className="text-sm text-gray-300 hover:text-brand hover:bg-brand/5 px-4 py-3 rounded-xl transition-all flex items-center gap-2 font-medium"
                 >
                   <span className="w-1.5 h-1.5 rounded-full bg-brand" />{l}
@@ -115,7 +121,13 @@ export default function Navbar() {
               <motion.a
                 href="#contact"
                 initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3 }}
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                    setOpen(false);
+                    setTimeout(() => {
+                      const el = document.getElementById('contact');
+                      if (el) el.scrollIntoView({ behavior: 'smooth' });
+                    }, 300);
+                  }}
                 className="mt-2 orange-btn px-5 py-3 text-sm text-center"
               >
                 Schedule Consultation

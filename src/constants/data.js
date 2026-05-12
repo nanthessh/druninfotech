@@ -14,9 +14,9 @@ export const SERVICES = [
 ];
 
 export const STATS = [
-  { icon: Users, value: '50+', label: 'Clients Served', numeric: 50, suffix: '+' },
-  { icon: TrendingUp, value: '120+', label: 'Projects Delivered', numeric: 120, suffix: '+' },
-  { icon: Star, value: '4.9', label: 'Average Rating', numeric: 4.9, suffix: '' },
+  { icon: Users, value: '2+', label: 'Clients Served', numeric: 2, suffix: '+' },
+  { icon: TrendingUp, value: '2+', label: 'Projects Delivered', numeric: 2, suffix: '+' },
+  { icon: Star, value: '4.0', label: 'Average Rating', numeric: 4.0, suffix: '' },
   { icon: TrendingUp, value: '3x', label: 'Faster Delivery', numeric: 3, suffix: 'x' },
 ];
 

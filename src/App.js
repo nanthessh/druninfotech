@@ -7,7 +7,6 @@ import Services from './components/Services';
 import Work from './components/Work';
 import Timeline from './components/Timeline';
 import Testimonials from './components/Testimonials';
-import Blog from './components/Blog';
 import About from './components/About';
 import Careers from './components/Careers';
 import Contact from './components/Contact';
@@ -25,7 +24,6 @@ export default function App() {
       <Work />
       <Timeline />
       <Testimonials />
-      <Blog />
       <About />
       <Careers />
       <Contact />
