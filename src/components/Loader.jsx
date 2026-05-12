@@ -13,7 +13,7 @@ export default function Loader() {
   return (
     <div className={`loader-screen`}>
       <div className="flex flex-col items-center gap-6">
-        <img src="/logo.png" alt="DRUN" className="h-14 w-auto animate-pulse" />
+        <img src="/logo512.png" alt="DRUN" className="h-14 w-auto animate-pulse" />
         <div className="loader-ring" />
       </div>
     </div>
