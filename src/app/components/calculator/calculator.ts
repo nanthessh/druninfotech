@@ -112,7 +112,7 @@ interface AddonOption {
             </div>
 
             <!-- Right Summary Output: 5 Cols -->
-            <div class="lg:col-span-5 flex flex-col justify-between">
+            <div class="lg:col-span-5 flex flex-col justify-between" style="display:none">
               <div class="rounded-2xl bg-gradient-to-b from-[#0f1b33] to-[#0a1324] border border-blue-500/30 p-6 sm:p-7 space-y-6 shadow-xl">
                 
                 <div class="flex items-center justify-between pb-4 border-b border-slate-800">
