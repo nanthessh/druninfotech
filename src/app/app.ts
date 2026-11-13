@@ -8,6 +8,7 @@ import { CalculatorComponent } from './components/calculator/calculator';
 import { ProcessComponent } from './components/process/process';
 import { WhyDrunComponent } from './components/why-drun/why-drun';
 import { ContactComponent } from './components/contact/contact';
+import { ContactEstimateComponent } from './components/contact-estimate/contact-estimate';
 import { FooterComponent } from './components/footer/footer';
 import { FloatingConnectComponent } from './components/floating-connect/floating-connect';
 import { ConsultationModalComponent } from './components/consultation-modal/consultation-modal';
