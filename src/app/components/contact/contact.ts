@@ -288,7 +288,7 @@ export class ContactComponent {
   submitted = signal<boolean>(false);
 
   sendViaWhatsApp(): void {
-    const text = `Hi DRUN Team!\n\n*New Project Enquiry:*\n- *Name:* ${this.name || 'Not provided'}\n- *Email:* ${this.userEmail || 'Not provided'}\n- *Phone:* ${this.phone || 'Not provided'}\n- *Service:* ${this.serviceType}\n- *Budget:* ${this.budget}\n- *Details:* ${this.message || 'Looking for initial consultation'}`;
+    const text = `Hi DRUN Team!\n\n*Consultation Request:*\n- *Name:* ${this.name || 'Not provided'}\n- *Email:* ${this.userEmail || 'Not provided'}\n- *Phone:* ${this.phone || 'Not provided'}\n- *Service:* ${this.serviceType}\n- *Budget:* ${this.budget}\n- *Details:* ${this.message || 'Looking for initial consultation'}`;
     const url = this.modalService.getWhatsAppUrl(text);
     window.open(url, '_blank');
   }
