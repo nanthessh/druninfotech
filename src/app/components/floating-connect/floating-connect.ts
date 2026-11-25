@@ -82,7 +82,7 @@ import { ModalService } from '../../services/modal.service';
         
         <!-- Gmail Floating Quick Pill -->
         <a 
-          [href]="modalService.getGmailUrl('Instant Project Inquiry', 'Hi DRUN,%0D%0A%0D%0AI want to connect regarding a project.')"
+          [href]="modalService.getGmailUrl('Instant Project Inquiry', 'Hi DRUN,\n\nI want to connect regarding a project.')"
           target="_blank"
           title="Compose Email in Gmail"
           class="p-3 rounded-full bg-rose-950/80 hover:bg-rose-900 border border-rose-500/40 text-rose-300 shadow-xl shadow-rose-950/50 hover:scale-110 active:scale-95 transition-all">

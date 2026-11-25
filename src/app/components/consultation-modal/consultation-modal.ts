@@ -114,7 +114,7 @@ export class ConsultationModalComponent {
   notes = '';
 
   dispatchWhatsApp(): void {
-    const text = `Hi DRUN Team!%0A%0A*Consultation Request:*%0A- Name: ${this.name || 'Not provided'}%0A- Phone: ${this.phone || 'Not provided'}%0A- Service: ${this.service}%0A- Notes: ${this.notes || 'Looking for project roadmap'}`;
+    const text = `Hi DRUN Team!\n\n*Consultation Request:*\n- Name: ${this.name || 'Not provided'}\n- Phone: ${this.phone || 'Not provided'}\n- Service: ${this.service}\n- Notes: ${this.notes || 'Looking for project roadmap'}`;
     const url = this.modalService.getWhatsAppUrl(text);
     window.open(url, '_blank');
     this.modalService.closeConsultation();
@@ -122,7 +122,7 @@ export class ConsultationModalComponent {
 
   dispatchGmail(): void {
     const subject = `Consultation Request: ${this.service}`;
-    const body = `Hi Nanthessh & DRUN Team,%0D%0A%0D%0AI would like to schedule a consultation regarding ${this.service}.%0D%0A%0D%0AName: ${this.name}%0D%0APhone: ${this.phone}%0D%0AProject Brief: ${this.notes}`;
+    const body = `Hi Nanthessh & DRUN Team,\n\nI would like to schedule a consultation regarding ${this.service}.\n\nName: ${this.name}\nPhone: ${this.phone}\nProject Brief: ${this.notes}`;
     const url = this.modalService.getGmailUrl(subject, body);
     window.open(url, '_blank');
     this.modalService.closeConsultation();

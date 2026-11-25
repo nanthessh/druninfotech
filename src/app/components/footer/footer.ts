@@ -41,7 +41,7 @@ import { ModalService } from '../../services/modal.service';
               </a>
 
               <a 
-                [href]="modalService.getGmailUrl('General Enquiry - DRUN', 'Hi DRUN,%0D%0A%0D%0AI want to get in touch.')" 
+                [href]="modalService.getGmailUrl('General Enquiry - DRUN', 'Hi DRUN,\n\nI want to get in touch.')" 
                 target="_blank"
                 class="p-2 rounded-lg bg-rose-950/60 border border-rose-500/30 text-rose-400 hover:bg-rose-900 transition-colors"
                 title="Send Gmail">
@@ -90,8 +90,8 @@ import { ModalService } from '../../services/modal.service';
             <h4 class="text-xs font-bold uppercase text-white tracking-wider">Connect with Us</h4>
             <div class="space-y-2 text-xs">
               <p class="text-slate-300">
-                <span class="block text-white font-semibold">Location:</span>
-                Coimbatore, Tamil Nadu, India
+                <span class="block text-white font-semibold">Locations:</span>
+                Coimbatore, Namakkal, Erode, Salem — Tamil Nadu, India
               </p>
               <p class="text-slate-300">
                 <span class="block text-white font-semibold">WhatsApp & Phone:</span>

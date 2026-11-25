@@ -83,9 +83,9 @@ import { CommonModule } from '@angular/common';
 
               <div class="p-6 rounded-2xl bg-[#0b1325]/90 border border-slate-800 space-y-3">
                 <span class="text-3xl">📍</span>
-                <h4 class="text-base font-bold text-white">Coimbatore Tech Hub</h4>
+                <h4 class="text-base font-bold text-white">Tamil Nadu Tech Hubs</h4>
                 <p class="text-xs text-slate-300 leading-relaxed">
-                  Based in Coimbatore, Tamil Nadu, India — delivering high-standard software engineering and digital marketing at unmatched velocity and value.
+                  Serving from Coimbatore, Namakkal, Erode & Salem, Tamil Nadu — delivering high-standard software engineering and digital marketing at unmatched velocity and value.
                 </p>
               </div>
 

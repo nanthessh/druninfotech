@@ -4,7 +4,6 @@ import { NavbarComponent } from './components/navbar/navbar';
 import { HeroComponent } from './components/hero/hero';
 import { DigitalMarketingComponent } from './components/digital-marketing/digital-marketing';
 import { SoftwareServicesComponent } from './components/software-services/software-services';
-import { CalculatorComponent } from './components/calculator/calculator';
 import { ProcessComponent } from './components/process/process';
 import { WhyDrunComponent } from './components/why-drun/why-drun';
 import { ContactComponent } from './components/contact/contact';
@@ -23,7 +22,6 @@ import { ModalService } from './services/modal.service';
     HeroComponent,
     DigitalMarketingComponent,
     SoftwareServicesComponent,
-    CalculatorComponent,
     ProcessComponent,
     WhyDrunComponent,
     ContactComponent,
@@ -47,9 +45,6 @@ import { ModalService } from './services/modal.service';
 
         <!-- Software Engineering Capabilities -->
         <app-software-services></app-software-services>
-
-        <!-- Interactive Cost & Scope Calculator -->
-        <app-calculator></app-calculator>
 
         <!-- 5-Step Process -->
         <app-process></app-process>

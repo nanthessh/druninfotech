@@ -95,7 +95,7 @@ import { ModalService } from '../../services/modal.service';
 
               <!-- Direct Gmail One-Click Composer -->
               <a 
-                [href]="modalService.getGmailUrl('New Project Inquiry - DRUN', 'Hello Nanthessh & DRUN Team,%0D%0A%0D%0AI want to build / scale my business with you.')"
+                [href]="modalService.getGmailUrl('New Project Inquiry - DRUN', 'Hello Nanthessh & DRUN Team,\n\nI want to build / scale my business with you.')"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="px-4 py-3.5 rounded-xl text-sm font-semibold text-slate-300 bg-white/5 border border-white/10 hover:bg-white/10 hover:border-slate-400 hover:text-white transition-all flex items-center gap-2 group">

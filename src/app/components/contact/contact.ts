@@ -97,7 +97,7 @@ import { ModalService } from '../../services/modal.service';
 
             <div class="space-y-2">
               <a 
-                [href]="modalService.getGmailUrl('Project Inquiry - DRUN', 'Hi DRUN Team,%0D%0A%0D%0AI want to get in touch regarding a project.')"
+                [href]="modalService.getGmailUrl('Project Inquiry - DRUN', 'Hi DRUN Team,\n\nI want to get in touch regarding a project.')"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-rose-300 bg-rose-950/80 hover:bg-rose-900 border border-rose-500/40 flex items-center justify-center gap-2 transition-all">
@@ -127,11 +127,11 @@ import { ModalService } from '../../services/modal.service';
                 </span>
               </div>
 
-              <h3 class="text-xl font-bold text-white mb-1">Coimbatore, India</h3>
-              <p class="text-xs text-slate-400 mb-4 font-mono">Tamil Nadu, India</p>
+              <h3 class="text-xl font-bold text-white mb-1">Tamil Nadu Hubs</h3>
+              <p class="text-xs text-slate-400 mb-4 font-mono">Coimbatore • Namakkal • Erode • Salem</p>
               
               <p class="text-xs text-slate-300 leading-relaxed mb-5">
-                Proudly operating from Coimbatore, serving clients across India, Southeast Asia, the Middle East, and globally.
+                Proudly operating across Coimbatore, Namakkal, Erode, and Salem — serving clients throughout India, Southeast Asia, the Middle East, and globally.
               </p>
             </div>
 
@@ -288,14 +288,14 @@ export class ContactComponent {
   submitted = signal<boolean>(false);
 
   sendViaWhatsApp(): void {
-    const text = `Hi DRUN Team!%0A%0A*New Project Enquiry:*%0A- *Name:* ${this.name || 'Not provided'}%0A- *Email:* ${this.userEmail || 'Not provided'}%0A- *Phone:* ${this.phone || 'Not provided'}%0A- *Service:* ${this.serviceType}%0A- *Budget:* ${this.budget}%0A- *Details:* ${this.message || 'Looking for initial consultation'}`;
+    const text = `Hi DRUN Team!\n\n*New Project Enquiry:*\n- *Name:* ${this.name || 'Not provided'}\n- *Email:* ${this.userEmail || 'Not provided'}\n- *Phone:* ${this.phone || 'Not provided'}\n- *Service:* ${this.serviceType}\n- *Budget:* ${this.budget}\n- *Details:* ${this.message || 'Looking for initial consultation'}`;
     const url = this.modalService.getWhatsAppUrl(text);
     window.open(url, '_blank');
   }
 
   sendViaGmail(): void {
     const subject = `Project Enquiry: ${this.serviceType} - ${this.name || 'Client'}`;
-    const body = `Hi Nanthessh & DRUN Team,%0D%0A%0D%0AI would like to discuss a project with the following details:%0D%0A%0D%0AName: ${this.name}%0D%0AEmail: ${this.userEmail}%0D%0APhone/WhatsApp: ${this.phone}%0D%0AService Needed: ${this.serviceType}%0D%0ABudget Range: ${this.budget}%0D%0A%0D%0AProject Scope / Requirements:%0D%0A${this.message}%0D%0A%0D%0APlease get in touch at your earliest convenience.`;
+    const body = `Hi Nanthessh & DRUN Team,\n\nI would like to discuss a project with the following details:\n\nName: ${this.name}\nEmail: ${this.userEmail}\nPhone/WhatsApp: ${this.phone}\nService Needed: ${this.serviceType}\nBudget Range: ${this.budget}\n\nProject Scope / Requirements:\n${this.message}\n\nPlease get in touch at your earliest convenience.`;
     const url = this.modalService.getGmailUrl(subject, body);
     window.open(url, '_blank');
   }

@@ -70,7 +70,7 @@ export class ContactEstimateComponent {
 
   openGmail(): void {
     const subject = `Project Estimate Request – ${this.projectType}`;
-    const body = `Hi DRUN,%0D%0A%0D%0AI am interested in a ${this.projectType} project.%0D%0A%0D%0ACompany: ${this.company}%0D%0ABudget: ${this.budget}%0D%0ADetails: ${this.message}%0D%0AContact: ${this.phone}%0D%0AEmail: ${this.email}`;
+    const body = `Hi DRUN,\n\nI am interested in a ${this.projectType} project.\n\nCompany: ${this.company}\nBudget: ${this.budget}\nDetails: ${this.message}\nContact: ${this.phone}\nEmail: ${this.email}`;
     window.open(this.modalService.getGmailUrl(subject, body), '_blank');
   }
 }

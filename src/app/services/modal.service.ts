@@ -23,7 +23,7 @@ export class ModalService {
   readonly phone = '+919360266792';
   readonly displayPhone = '+91 93602 66792';
   readonly email = 'druntech.official@gmail.com';
-  readonly location = 'Coimbatore, Tamil Nadu, India';
+  readonly location = 'Coimbatore, Namakkal, Erode, Salem — Tamil Nadu, India';
 
   openConsultation(defaultService: string = 'Software Development'): void {
     this.isConsultationOpen.set(true);

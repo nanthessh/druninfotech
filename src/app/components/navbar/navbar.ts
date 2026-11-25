@@ -14,11 +14,11 @@ import { ModalService } from '../../services/modal.service';
         'bg-transparent py-5': !isScrolled()
       }">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between gap-4">
           
           <!-- Brand Logo & Tagline -->
-          <a href="#" class="flex items-center gap-3.5 group">
-            <div class="relative w-11 h-11 rounded-xl overflow-hidden bg-white/5 p-1 border border-blue-500/30 shadow-md group-hover:border-blue-400 transition-all">
+          <a href="#" class="flex items-center gap-3 shrink-0 group">
+            <div class="relative w-11 h-11 rounded-xl overflow-hidden bg-white/5 p-1 border border-blue-500/30 shadow-md group-hover:border-blue-400 transition-all shrink-0">
               <img 
                 src="assets/drun-logo.jpg" 
                 alt="DRUN Logo" 
@@ -31,56 +31,52 @@ import { ModalService } from '../../services/modal.service';
               </span>
             </div>
             
-            <div class="flex flex-col">
+            <div class="flex flex-col whitespace-nowrap">
               <div class="flex items-center gap-1.5">
                 <span class="text-2xl font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors font-display">
                   DRUN
                 </span>
-                <span class="text-[10px] uppercase font-semibold tracking-widest px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                <span class="text-[10px] uppercase font-semibold tracking-widest px-1.5 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20 whitespace-nowrap">
                   Tech & Growth
                 </span>
               </div>
-              <span class="text-xs text-slate-400 tracking-wider">Design • Develop • Scale</span>
+              <span class="text-xs text-slate-400 tracking-wider whitespace-nowrap">Design • Develop • Scale</span>
             </div>
           </a>
 
           <!-- Desktop Navigation Links -->
-          <nav class="hidden lg:flex items-center gap-1 xl:gap-2">
-            <a href="#services" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+          <nav class="hidden lg:flex items-center gap-1 xl:gap-2 whitespace-nowrap">
+            <a href="#services" class="px-3 py-2 text-[13px] xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap">
               Software Services
             </a>
             
-            <a href="#digital-marketing" class="px-3.5 py-2 text-sm font-medium text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 rounded-lg transition-colors flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Digital Marketing
+            <a href="#digital-marketing" class="px-3 py-2 text-[13px] xl:text-sm font-medium text-emerald-400 hover:text-emerald-300 hover:bg-emerald-500/10 rounded-lg transition-colors flex items-center gap-1.5 whitespace-nowrap">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0"></span>
+              <span>Digital Marketing</span>
             </a>
 
-            <a href="#calculator" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
-              Cost & ROI Calculator
-            </a>
-
-            <a href="#process" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+            <a href="#process" class="px-3 py-2 text-[13px] xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap">
               Process
             </a>
 
-            <a href="#why-us" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+            <a href="#why-us" class="px-3 py-2 text-[13px] xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap">
               Why DRUN
             </a>
 
-            <a href="#contact" class="px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+            <a href="#contact" class="px-3 py-2 text-[13px] xl:text-sm font-medium text-slate-300 hover:text-white hover:bg-white/5 rounded-lg transition-colors whitespace-nowrap">
               Contact
             </a>
           </nav>
 
           <!-- Action Buttons / Connectivity Links -->
-          <div class="hidden md:flex items-center gap-2.5">
+          <div class="hidden md:flex items-center gap-2 shrink-0 whitespace-nowrap">
             <!-- Direct WhatsApp Connectivity Button -->
             <a 
               [href]="modalService.getWhatsAppUrl('Hi DRUN! I saw your website and would like to discuss a project.')"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 hover:bg-emerald-900/60 hover:border-emerald-400 transition-all shadow-sm group">
-              <svg class="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+              class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 hover:bg-emerald-900/60 hover:border-emerald-400 transition-all shadow-sm group whitespace-nowrap">
+              <svg class="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.302c-.087.087-.179.182-.077.357.101.174.449.741.964 1.201.662.591 1.221.774 1.394.861.174.086.275.072.376-.044.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564c.173.087.289.13.332.202.043.073.043.419-.101.824z"/>
               </svg>
               <span>WhatsApp</span>
@@ -88,11 +84,11 @@ import { ModalService } from '../../services/modal.service';
 
             <!-- Direct Gmail Connectivity Button -->
             <a 
-              [href]="modalService.getGmailUrl('Project Inquiry - DRUN', 'Hi DRUN Team,%0D%0A%0D%0AI would like to learn more about your Software Development and Digital Marketing services for my business.%0D%0A%0D%0AName:%0D%0ACompany:%0D%0ARequirement:%0D%0ABudget:')"
+              [href]="modalService.getGmailUrl('Project Inquiry - DRUN', 'Hi DRUN Team,\n\nI would like to learn more about your Software Development and Digital Marketing services for my business.\n\nName:\nCompany:\nRequirement:')"
               target="_blank"
               rel="noopener noreferrer"
-              class="inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-semibold text-rose-400 bg-rose-950/40 border border-rose-500/30 hover:bg-rose-900/60 hover:border-rose-400 transition-all shadow-sm group">
-              <svg class="w-4 h-4 text-rose-400 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
+              class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-semibold text-rose-400 bg-rose-950/40 border border-rose-500/30 hover:bg-rose-900/60 hover:border-rose-400 transition-all shadow-sm group whitespace-nowrap">
+              <svg class="w-4 h-4 text-rose-400 group-hover:scale-110 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
               </svg>
               <span>Gmail</span>
@@ -101,7 +97,7 @@ import { ModalService } from '../../services/modal.service';
             <!-- Primary Consultation Action -->
             <button 
               (click)="modalService.openConsultation('General Enquiry')"
-              class="relative inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-600/30 transition-all active:scale-95 cursor-pointer">
+              class="relative inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl hover:from-blue-500 hover:to-indigo-500 shadow-lg shadow-blue-600/30 transition-all active:scale-95 cursor-pointer whitespace-nowrap">
               <span>Get Free Quote</span>
             </button>
           </div>
@@ -138,7 +134,7 @@ import { ModalService } from '../../services/modal.service';
           </a>
 
           <a 
-            [href]="modalService.getGmailUrl('Mobile Enquiry - DRUN', 'Hi DRUN,%0D%0A%0D%0AI am looking for software and marketing solutions for my project.')"
+            [href]="modalService.getGmailUrl('Mobile Enquiry - DRUN', 'Hi DRUN,\n\nI am looking for software and marketing solutions for my project.')"
             target="_blank"
             class="flex items-center justify-center gap-2 p-2.5 rounded-xl bg-rose-950/60 border border-rose-500/40 text-rose-400 text-xs font-semibold">
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -155,9 +151,6 @@ import { ModalService } from '../../services/modal.service';
           <a (click)="isMobileMenuOpen.set(false)" href="#digital-marketing" class="px-4 py-2.5 rounded-lg text-sm font-medium text-emerald-400 hover:bg-emerald-500/10 flex items-center justify-between">
             <span>Digital Marketing</span>
             <span class="text-[10px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-bold">HIGH ROI</span>
-          </a>
-          <a (click)="isMobileMenuOpen.set(false)" href="#calculator" class="px-4 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">
-            Cost & Scope Calculator
           </a>
           <a (click)="isMobileMenuOpen.set(false)" href="#process" class="px-4 py-2.5 rounded-lg text-sm font-medium text-slate-200 hover:bg-white/5">
             Our 5-Step Process
